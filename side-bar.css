@@ -1,0 +1,332 @@
+body {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    padding: 0px;
+    margin: 0px;
+    background-color: black; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.side-bar {
+    grid-column: 1 / 5;
+   border-right: 1px solid #161616;
+   
+    height: 100vh;
+    width: 100%;
+    flex-direction: row;
+    display: grid;
+    grid-template-rows: 120px 1fr 1fr;
+    
+    
+}
+.side-bar .profile {
+height: 100%;
+width: 100%;
+}
+.side-bar .profile div {
+grid-row: 1 / 2;
+display: grid;
+grid-template-columns: auto 1fr 30px;
+padding-top: 20px;
+
+}
+
+
+
+.side-bar .profile a :hover {
+    background-color: #38383889;
+    border-radius: 20px;
+   transition-duration: .4s;
+
+
+    
+
+}
+.side-bar .profile img {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    padding: 20px ;
+  
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+
+
+}
+.side-bar .profile img:hover {
+    background-color: #38383800;
+    border-radius: 50%;
+}
+
+.side-bar .profile h3 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    color: white;
+    font-size: 15px;
+    margin: 0;
+    padding: 10px;
+  position : absolute;
+    top: 35px;  
+    left : 105px;  
+}
+.side-bar .profile h3:hover {
+    background-color: #38383800;
+}
+.side-bar .profile p {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    color: rgb(129, 129, 129);
+    font-size: 12px;
+    margin: 0;
+    padding: 10px;
+    position : absolute;
+    top: 55px;  
+    left : 105px; 
+
+}
+.side-bar .profile p:hover {
+    background-color: #38383800;
+}
+.btns {
+    grid-row: 2 / 3;
+
+}
+
+.programs {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    height: 50px;
+    width: 100%;
+padding-top: 10px;
+padding-bottom: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    transition-duration: .4s;
+
+}
+.programs img {
+    height: 20px;
+    width: 20px;
+    margin-left: 20px;
+
+}
+.programs:hover {
+    background-color: #383838;
+    border-radius: 20px;
+    transition-duration: .4s;
+   
+}
+
+.events {
+ 
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    height: 50px;
+    width: 100%;
+padding-top: 10px;
+padding-bottom: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    transition-duration: .4s;
+
+}
+.events img {
+    height: 20px;
+    width: 20px;
+    margin-left: 20px;
+
+}
+.events:hover {
+    background-color: #383838;
+    border-radius: 20px;
+    transition-duration: .4s;
+   
+}
+
+
+.meet {
+ 
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    height: 50px;
+    width: 100%;
+padding-top: 10px;
+padding-bottom: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    transition-duration: .4s;
+
+}
+.meet img {
+    height: 20px;
+    width: 20px;
+    margin-left: 20px;
+
+}
+.meet:hover {
+    background-color: #383838;
+    border-radius: 20px;
+    transition-duration: .4s;
+   
+}
+
+.volunteer {
+ 
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    height: 50px;
+    width: 100%;
+padding-top: 10px;
+padding-bottom: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    transition-duration: .4s;
+
+}
+.volunteer img {
+    height: 20px;
+    width: 20px;
+    margin-left: 20px;
+
+}
+.volunteer:hover {
+    background-color: #383838;
+    border-radius: 20px;
+    transition-duration: .4s;
+   
+}
+.down {
+    height: 20px;
+    width: 20px;
+    /* display: flex;
+    justify-content: right; */
+}
+
+
+.dropbtn {
+    background-color: #38383800; 
+    width: 55px;
+    height: 30px;
+    border: none;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    outline: none;  
+}
+.dropbtn:hover {
+    background-color: #2a2a2a;
+    /* border-radius: 7px; */
+    transition-duration: .4s;
+}
+
+.calendar {
+    grid-row: 3 / 4;
+    padding: 5px;
+    color: white;
+    font-family: inherit;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.calendar-header .prev-month,
+.calendar-header .next-month {
+    background-color: #383838;
+    color: white;
+    border: none;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.calendar-header .prev-month:hover,
+.calendar-header .next-month:hover {
+    background-color: #2a2a2a;
+}
+
+.calendar-header .month-year {
+    font-size: 16px;
+}
+
+.calendar-body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.day-names {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 10px;
+
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 2px;
+    text-align: center;
+}
+
+.day {
+    padding: 2px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.day:hover {
+    background-color: #383838;
+    cursor: pointer;
+}
+.day:active {
+    background-color: #0040ff;
+    color: white;
+}
+
+.current-day {
+    background-color: #0040ff;
+    color: white;
+}
+
+
+.event-day {
+    background-color: #ff0040;
+    color: white;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal.show {
+    display: block;
+}
