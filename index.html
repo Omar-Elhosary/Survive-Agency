@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+
+<div class="container" >
+    <button class="btn" onclick="openPopup()">+</button>
+    
+    <div id="popup" class="popup">
+        <button onclick="closePopup()">X</button>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="authority">Authority:</label>
+            <input type="text" id="authority" name="authority"><br><br>
+
+            <label for="type">Type:</label>
+            <input type="text" id="type" name="type"><br><br>
+
+            <label for="deadline">Deadline:</label>
+            <input type="date" id="deadline" name="deadline"><br><br>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" style="width: 90%;"></textarea><br><br>
+
+            <button type="submit">Add</button>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>
